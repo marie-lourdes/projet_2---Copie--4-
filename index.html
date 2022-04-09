@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Booki</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content=" Nous sommes un site de réservation d'hotels" />
+        <meta name="author" content="marie-lourdes LEPERLIER"/>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0", user-scalable="no"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https://kit.fontawesome.com/365efc5f07.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        
+        <div id="bloc_page">
+            <header>
+
+                <div id="logo">
+                    <img src="images/Booki3x.png" alt="Logo de Booki" />
+                </div>
+                <nav >
+                    <div class="menu">
+                    <div class="lien"><a href="#hebergements">Hébergements</a></div>
+                    <div class="lien"> <a href="#activites">Activités</a></div>
+                    </div>
+
+                </nav>
+            </header>
+            
+                <section id="recherche">
+                    <div class="trouvez_hebergement">
+                        <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p> En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <div id="barre_de_recherche">
+                        <div class="formulaire">
+                        <form class="form" method="post" action="recherhe_utilisateur.php" role="search">
+                        <div id="ico_map">
+                            <i class="fa-solid fa-location-dot "></i>
+                        </div>
+                        <div class="champs_recherche">
+                            <input class="champs" name="recherches" id="recherches" type="search" value="Marseille, France" />
+    
+                        </div>
+                        <div class="rechercher">
+                          <input class="bouton_rechercher" type="submit" value="Rechercher"/>
+                          <button  class="bouton_loupe"type="submit" value=""> <i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        </form>
+                  </div>
+                       
+                      
+                    </div>
+                    <div class="filtre_recherche"> 
+            
+                        <h1> Filtres</h1> 
+                         
+                        <form method="post" action="filtres.php">
+                           
+                            <div class="bordure_filtre">  
+                                <div class="bouton_filtre" id="economique">
+                                <button type="submit" class="bouton_icone"><i class="fa-solid fa-money-bill-wave"></i></button><div class="label_filtre"><label for="economique">Économique</label></div>
+                                </div>
+                            </div>
+                            <div class="bordure_filtre">  
+                                <div class="bouton_filtre" id="familial">
+                                <button type="submit" class="bouton_icone"><i class="fa-solid fa-child-reaching"></i></button><div class="label_filtre"><label for="familial">Familial</label></div>
+                                </div>
+                            </div>
+                            <div class="bordure_filtre">  
+                                <div class="bouton_filtre" id="romantique">
+                                <button type="submit" class="bouton_icone"><i class="fa-solid fa-heart"></i></button><div class="label_filtre"><label for="romantique">Romantique</label></div>
+                                </div>
+                            </div>
+                            <div class="bordure_filtre">  
+                                <div class="bouton_filtre" id="animaux">
+                                <button type="submit" class="bouton_icone"><i class="fa-solid fa-dog"></i> </button><div class="label_filtre"><label for="animaux">Animaux autorisés</label></div>
+                                </div>
+                            </div>
+                        
+                        </form>
+                    </div>
+                    
+                     <div class="info ">
+                        <div class="cercle ">
+                        <i class="fa-solid fa-info"></i>
+                       </div>
+                       <div>
+                       <p> Plus de 500 logements sont disponibles dans cette ville</p>
+                       </div>
+                    </div>
+                    
+                </section>
+           
+           
+                <main>
+             
+                <div id="hebergement_populaire"> 
+
+                     
+                        <section id="hebergement">
+                            
+                                <h1>Hébergement à Marseille</h1>
+                            
+                                <div class="galerie">
+                                    
+                                    <div class="ligne1">
+                                        
+                                            <div class="vignette">
+                                                <div  class="photo_hebergement">
+                                               <a href="#"> <img 
+                                                srcset="images/cannebiere-xl.jpg 3200w, images/cannebiere-l.jpg 1600w, images/cannebiere-m.jpg 800w, images/cannebiere-s.jpg 500w"
+                                                sizes="(min-width:1200px) 30vw, (min-width:992px) 30vw, (min-width:768px) and (max-width:991px) 40vw, (max-width:767px) 100vw"
+                                               
+                                                src="images/cannebiere-m.jpg" alt=" Photo Hotel de la Cannebière"/></a>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="#"> <h3>Auberge la cannebiere</h3></a>
+                                                    <p> Nuit à partir de <strong>25€</strong></p>
+                                                    <div class="etoile" >
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilegrise"></i>
+                                                    </div>
+                                                </div>
+                                             </div>   
+                                        
+                                        
+                                            <div class="vignette">
+                                                <div  class="photo_hebergement">
+                                               <a href="#"> <img
+                                                srcset="images/hotel-port-xl.jpg 3200w, images/hotel-port-l.jpg 1600w, images/hotel-port-m.jpg 800w, images/hotel-port-s.jpg 500w"
+                                                sizes="(min-width:1200px) 30vw, (min-width:992px) 30vw, (min-width:768px) and (max-width:991px) 40vw, (max-width:767px) 100vw" 
+                                                src="images/hotel-port-m.jpg" alt=" Photo Hôtel du port"/></a>
+                                                </div>
+                                                <div  class="description">
+                                                    <a href="#"><h3>Hôtel du port</h3></a>
+                                                    <p> Nuit à partir de <strong>52€</strong></p>
+                                                    <div class="etoile"> 
+                                                        <i class="fa-solid fa-star etoilebleu"> </i>
+                                                        
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+
+                                                   
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        
+                                            <div class="vignette">
+                                                <div  class="photo_hebergement">
+                                                <a href="#"><img 
+                                                    srcset="images/hotel-mouettes-xl.jpg 3200w, images/hotel-mouettes-l.jpg 1600w, images/hotel-mouettes-m.jpg 800w, images/hotel-mouettes-s.jpg 500w"
+                                                    sizes="(min-width:1200px) 30vw, (min-width:992px) 30vw, (min-width:768px) and (max-width:991px) 40vw, (max-width:767px) 100vw" 
+                                                    src="images/hotel-mouettes-m.jpg" alt="Photo Hôtel les mouettes"/></a>
+                                                </div>
+                                                <div class="description" >
+                                                    <a href="#"><h3>Hôtel Les mouettes</h3></a>
+                                                    <p> Nuit à partir de <strong>76€</strong></p>
+                                                    <div class="etoile"> 
+                                                        <i class="fa-solid fa-star etoilebleu"></i>
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                            
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                            
+                                                         <i class="fa-solid fa-star etoilegrise"></i>    
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                    
+                                    </div>
+                                    <div class="ligne2">   
+                                        
+                                            <div class="vignette">
+                                                <div class="photo_hebergement">
+                                                <a href="#"><img 
+                                                    srcset="images/hotel-la-mer-xl.jpg 3200w, images/hotel-la-mer-l.jpg 1600w, images/hotel-la-mer-m.jpg 800w, images/hotel-la-mer-s.jpg 500w"
+                                                    sizes="(min-width:1200px) 30vw, (min-width:992px) 30vw, (min-width:768px) and (max-width:991px) 40vw, (max-width:767px) 100vw"
+                                                  
+                                                    src="images/hotel-la-mer-m.jpg" alt=" Photo Hôtel de la mer"/></a>
+                                                </div>
+                                                <div class="description" >
+                                                   <a href="#"><h3>Hôtel de la mer</h3></a>
+                                                    <p> Nuit à partir de <strong>46€</strong></p>
+                                                    <div class="etoile" > 
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilegrise"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilegrise"></i>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                    
+                                    
+                                        
+                                            <div class="vignette">
+                                                <div  class="photo_hebergement">
+                                                <a href="#"><img 
+                                                    srcset="images/le-panier-xl.jpg 3200w, images/le-panier-l.jpg 1600w, images/le-panier-m.jpg 800w, images/le-panier-s.jpg 500w"
+                                                    sizes="(min-width:1200px) 30vw, (min-width:992px) 30vw, (min-width:768px) and (max-width:991px)  40vw, (max-width:767px) 100vw"
+                                                    src="images/le-panier-m.jpg" alt="Auberge Le panier"/></a>
+                                                </div>
+                                                <div class="description" >
+                                                   <a href="#"><h3>Auberge le panier</h3></a>
+                                                    <p> Nuit à partir de <strong>23€</strong></p>
+                                                    <div class="etoile" >
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilegrise"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        
+                                            <div class="vignette">
+                                                <div  class="photo_hebergement">
+                                               <a href="#"><img 
+                                                srcset="images/amina-xl.jpg 3200w, images/amina-l.jpg 1600w, images/amina-m.jpg 800w, images/amina-s.jpg 500w"
+                                                sizes="(min-width:1200px) 30vw, (min-width:992px) 30vw, (min-width:768px) and (max-width:991px)  40vw, (max-width:767px) 100vw"
+                                                src="images/amina-m.jpg" alt="Hôtel chez Amina"/></a>
+                                                </div>
+                                                <div class="description">
+                                                   <a href="#"><h3>Hôtel chez Amina</h3></a>
+                                                    <p> Nuit à partir de <strong>96€</strong></p>
+                                                    <div class="etoile">
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                                         <i class="fa-solid fa-star etoilebleu"></i>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                   
+                                </div>
+                                <p><a href="#" class="affiche_plus"><strong>Afficher plus</strong></a></p>
+                                
+                        </section> 
+                    <aside id="sidebar">
+                        <div class="flexcolonne">
+                            <div class="titre_chart">
+                            <h2> Les plus populaires</h2>
+                            <div><img src="images/chart-line.png" alt="icone chart" class="chart_line"/></div>
+                            </div>
+                            <div class="vignettes_populaire3">
+                            <div class="vignette_populaire ">
+                                <div class="populaire">
+                                    <div class="photo_populaire">
+                                        <a href="#"><img 
+                                            srcset="images/soleil-du-matin-xl.jpg 3200w, images/soleil-du-matin-l.jpg 1600w, images/soleil-du-matin-m.jpg 800w, images/soleil-du-matin-s.jpg 500w"
+                                            sizes="(min-width:1200px) 35vw, (min-width:992px) 35vw, (min-width:768px) and (max-width:991px)  50vw, (max-width:767px) 100vw"
+                                            src="images/soleil-du-matin-m.jpg" alt="Hôtel Le soleil du matin"/></a>
+
+                                    </div>
+                                    
+                                    <div class="description_populaire">
+                                        <div>
+                                       <a href="#"><h3> Hôtel Le soleil du matin</h3></a>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        </div>
+                                        <div class="etoile_populaire">
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                             <i class="fa-solid fa-star etoilebleu"></i>
+                                        </div>
+                                    </div>
+                                   
+                              
+                                </div>
+                            </div>
+                            <div class="vignette_populaire ">
+                                <div class="populaire">
+                                    
+                                    <div class="photo_populaire">
+                                   <a href="#"><img 
+                                    srcset="images/chambre-dhote-xl.jpg 3200w, images/chambre-dhote-l.jpg 1600w, images/chambre-dhote-m.jpg 800w, images/chambre-dhote-s.jpg 500w"
+                                            sizes="(min-width:1200px) 35vw, (min-width:992px) 35vw, (min-width:768px) and (max-width:991px)  50vw, (max-width:767px) 100vw"
+                                    src="images/chambre-dhote-xl.jpg" alt="Au coeur de l'eau chambre d'hôtes"/></a>
+
+                                    </div>
+                                    
+                                    <div class="description_populaire">
+                                        <div>
+                                        <a href="#"><h3> Au coeur de l'eau Chambre d'hôtes</h3></a>
+                                        <p>Nuit à partir de <strong>71€</strong></p>
+                                        </div>
+                                        <div class="etoile_populaire">
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                             <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                             <i class="fa-solid fa-star etoilegrise"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vignette_populaire">
+                                <div class="populaire">
+                                    
+                                    <div class="photo_populaire">
+                                       <a href="#"><img 
+                                        srcset="images/bleu-blanc-xl.jpg 3200w, images/bleu-blanc-l.jpg 1600w, images/bleu-blanc-m.jpg 800w, images/bleu-blanc-s.jpg 500w"
+                                            sizes="(min-width:1200px) 35vw, (min-width:992px) 35vw, (min-width:768px) and (max-width:991px)  50vw, (max-width:767px) 100vw"
+                                        src="images/bleu-blanc-xl.jpg" alt="Hôtel Tout bleu et blanc"/></a>
+
+                                    </div>
+                                    
+                                    <div class="description_populaire">
+                                        <div>
+                                        <a href="#"><h3> Hôtel Tout bleu et Blanc</h3></a>
+                                        <p>Nuit à partir de <strong>68€</strong></p>
+                                        </div>
+                                        <div class="etoile_populaire">
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                 
+                                            <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                             <i class="fa-solid fa-star etoilebleu"></i>
+                                                         
+                                             <i class="fa-solid fa-star etoilegrise"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        </div>  
+                         
+                     </aside>
+                    </div> 
+                    
+                
+            <section id="activites">
+                <h1>Activités à Marseille</h1>
+                <div class="groupe1">
+                        <div class="vignette_activites1">
+                            <div class="photo_activite1">
+                               <a href="#"> <img src="images/vieux-port-xl.jpg" alt="photo du Vieux port"/></a>
+                                <div class="titre_photo"><a href="#"><h3>Vieux Port</h3></a></div>
+                            </div>
+                        </div>
+                    
+                    <div class="pomegues_frioul">
+                        <div class="vignette_activites">
+                            <div class="photo_activite2">
+                                <a href="#"><img src="images/pomegues-xl.jpg" alt=" photo du Fort de Pomègues"/></a>
+                                <div class="titre_photo"><a href="#"><h3> Fort de Pomègues</h3></a></div>
+                            </div>
+                        </div>
+
+                        <div class="vignette_activites">
+                            <div class="photo_activite3">
+                                <a href="#"><img src="images/frioul-xl.jpg" alt=" photo des Iles du Frioul"/></a>
+                                <div class="titre_photo"><a href="#"><h3>Îles du Frioul</h3></a></div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="vignette_activites1">
+                        <div class="photo_activite1">
+                            <a href="#"><img src="images/calanques-xl.jpg" alt="photo Parc national des calanques"/></a>
+                            <div class="titre_photo"><a href="#"><h3>Parc National des Calanques</h3></a></div>
+                        </div>
+                    </div>
+                
+                <div class="pomegues_frioul">
+                    <div class="vignette_activites">
+                        <div class="photo_activite5">
+                            <a href="#"><img src="images/la-garde-xl.jpg" alt=" photo Notre Dame de la garde"/></a>
+                            <div class="titre_photo"><a href="#"><h3> Notre-Dame-de-la-Garde</h3></a></div>
+                        </div>
+                    </div>
+
+                    <div class="vignette_activites">
+                        <div class="photo_activite6">
+                           <a href="#"><img src="images/longchamp-xl.jpg" alt=" photo des Iles du Frioul"/></a>
+                            <div class="titre_photo"><a href="#"><h3>Parc Longchamp</h3></a></div>
+                        </div>
+                    </div>
+                </div>  
+              </div>       
+                
+                    
+            </section>
+            </main>
+        </div>
+        <footer>
+            <div id="footer_booki">
+                <div class="apropos">
+                    <h1>A propos</h1>
+                    <div class="fonctionnement_du_site"><a href="#">Fonctionnement du site</a></div>
+                    <div><a href="#">Conditions générales de vente</a></div>
+                    <div> <a href="#">Données et confidentialité</a></div>
+                        
+                </div>
+                <div class="nos_hebergements">
+                    <h1>Nos hébergements</h1>
+                    <div><a href="#"> Charte qualité</a></div>
+                    <div> <a href="#">Soumettre votre hôtel</a></div>
+                </div>
+                <div class="assistance">
+                    <h1>Assistance</h1>
+                    <div><a href="#"> Centre d'aide</a></div>
+                    <div> <a href="#">Nous contacter</a></div>
+                </div>
+            </div>
+        </footer>
+     
+        
+   </body>
+</html>
